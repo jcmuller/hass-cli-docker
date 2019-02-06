@@ -1,5 +1,5 @@
 FROM python:3
-MAINTAINER Juan C. Muller <jcmuller@gmail.com>
+MAINTAINER Juan C. Müller <jcmuller@gmail.com>
 
 RUN git clone https://github.com/home-assistant/home-assistant-cli.git /app
 ADD . /app
