@@ -9,4 +9,4 @@ RUN \
   . bin/activate && \
   script/setup
 
-CMD ['bin/hass-cli']
+CMD 'bin/hass-cli'
