@@ -9,5 +9,11 @@ RUN \
   . bin/activate && \
   script/setup
 
+RUN apt-get update; \
+  DEBIAN_FRONTEND=noninteractive apt-get install -y \
+    vim-nox \
+    && \
+  rm -rf /var/lib/apt/lists/*
+
 ENTRYPOINT ["/app/bin/python3", "/app/bin/hass-cli"]
 CMD ["--help"]
