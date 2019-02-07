@@ -9,4 +9,5 @@ RUN \
   . bin/activate && \
   script/setup
 
-CMD 'bin/hass-cli'
+ENTRYPOINT ["/app/bin/python3", "/app/bin/hass-cli"]
+CMD ["--help"]
